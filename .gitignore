@@ -1,4 +1,4 @@
 CalcPython.sln
-.vs
 CalcPython/CalcPython.pyproj
-CalcPython/modules/__pycache__
+CalcPython/modules/__pycache__/Init.cpython-39.pyc
+.vs/CalcPython/v17/.suo
