@@ -2,19 +2,19 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import *
 
-
 def Initialize():
 
     root = tk.Tk()
-    root.geometry("550x220")
+    root.geometry("350x220")
+    root.title("Calc")
 
-    frame = ttk.Frame(root).grid()
+    label1 = ttk.Label(root, text = "baza").place(x = 10, y = 10)
+    label2 = ttk.Label(root, text = "actions").place(x = 200, y = 10)
 
-    label1 = ttk.Label(frame, text = "baza").grid(column = 0, row = 0)
-
-    entry1 = ttk.Entry(frame).grid(column = 2, row = 0, sticky = "e")
-
-    buttonex = ttk.Button(frame, command = root.destroy).grid(column = 8, row = 8)
+    entry1 = ttk.Entry(root, width = 15).place(x = 40, y = 10)
+    entry2 = ttk.Entry(root, width = 15).place(x = 40, y = 30)
+    
+    buttonex = ttk.Button(command = root.destroy, text = "Exit", width = 9).place(x = 280, y = 190)
 
     root.mainloop()
 
